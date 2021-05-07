@@ -3,11 +3,16 @@
 # Project created by QtCreator 2021-04-16T17:02:13
 #
 #-------------------------------------------------
-#include(../QXlsx/QXlsx.pri)
-include(../qtxlsx/src/xlsx/qtxlsx.pri)
-QT       -= gui
 
-TARGET = $$PWD/../SO_File/BTest
+# QXksx 1.4.0 (Qt6)
+QXLSX_PARENTPATH=../../QXlsx-1.4.0/
+QXLSX_HEADERPATH=../../QXlsx-1.4.0/header/
+QXLSX_SOURCEPATH=../../QXlsx-1.4.0/source/
+include(../../QXlsx-1.4.0/QXlsx.pri)
+
+QT       -= gui
+CONFIG += c++11
+# TARGET = $$PWD/../SO_File/BTest
 TEMPLATE = lib
 
 DEFINES += BTEST_LIBRARY

@@ -1,6 +1,13 @@
+
+#include <QtGlobal>
+#include <QObject>
+#include <QString>
+#include <QFile>
+
 #include "ATest.h"
 #include <QDebug>
 #include "xlsxdocument.h"
+
 ATest::ATest()
 {
 //    QString excelPath = "/home/nvme/Desktop/EmptyForTest.xlsx";

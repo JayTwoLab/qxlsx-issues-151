@@ -3,13 +3,17 @@
 # Project created by QtCreator 2021-04-16T17:01:43
 #
 #-------------------------------------------------
-#include(../QXlsx/QXlsx.pri)
-include(../qtxlsx/src/xlsx/qtxlsx.pri)
+
+# QXksx 1.4.0 (Qt6)
+QXLSX_PARENTPATH=../../QXlsx-1.4.0/
+QXLSX_HEADERPATH=../../QXlsx-1.4.0/header/
+QXLSX_SOURCEPATH=../../QXlsx-1.4.0/source/
+include(../../QXlsx-1.4.0/QXlsx.pri)
+
 QT       -= gui
-
-TARGET = $$PWD/../SO_File/ATest
+CONFIG += c++11
+# TARGET = $$PWD/../SO_File/ATest
 TEMPLATE = lib
-
 DEFINES += ATEST_LIBRARY
 
 # The following define makes your compiler emit warnings if you use
